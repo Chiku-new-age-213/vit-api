@@ -2,6 +2,18 @@ import express from "express";
 
 const app = express();
 app.use(express.json());
+app.get("/bfhl", (req, res) => {
+  res.json({
+    operation_code: 1,
+    result: "Hello from /bfhl 🚀"
+  });
+});
+app.get("/bfhl", (req, res) => {
+  res.json({
+    operation_code: 1,
+    result: "Hello from /bfhl 🚀"
+  });
+});
 
 app.post("/bfhl", (req, res) => {
   try {
