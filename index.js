@@ -26,7 +26,7 @@ app.post("/bfhl", (req, res) => {
       }
     });
 
-    // Reverse + alternating caps for alphabets
+    
     let concat = alphabets.join("");
     let rev = concat.split("").reverse();
     let altCaps = rev.map((ch, i) =>
@@ -35,9 +35,9 @@ app.post("/bfhl", (req, res) => {
 
     res.status(200).json({
       is_success: true,
-      user_id: "Chirag_Dhawan_21072003",   // change this to your name + dob
-      email: "chiradg,dhawan2022@vitstudent.ac.in", // replace
-      roll_number: "22BCE1080",             // replace
+      user_id: "Chirag_Dhawan_21072003",   
+      email: "chiradg,dhawan2022@vitstudent.ac.in", 
+      roll_number: "22BCE1080",            
       odd_numbers: odds,
       even_numbers: evens,
       alphabets,
